@@ -40,7 +40,8 @@ def scrape_noticia(html_content):
         "timestamp": selector.css(".meta-date::text").get(),
         "writer": selector.css(".author a::text").get(),
         "comments_count": len(selector.css(".comment-list li").getall()),
-        "summary": "".join(selector.css(".entry-content > p:nth-of-type(1) *::text").getall()).strip(),
+        "summary": "".join(selector.css(
+            ".entry-content > p:nth-of-type(1) *::text").getall()).strip(),
         "tags": selector.css("section.post-tags ul li a::text").getall(),
         "category": selector.css(".category-style .label::text").get(),
     }
