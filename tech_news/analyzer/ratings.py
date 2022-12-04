@@ -17,4 +17,16 @@ def top_5_news():
 
 # Requisito 11
 def top_5_categories():
-    """Seu código deve vir aqui"""
+    data = find_news()
+    counter = {}
+    categories = [news["category"]for news in data]
+    for item in categories:
+        if item in counter:
+            counter[item] += 1
+        else:
+            counter[item] = 1
+    create_return = sorted(
+        counter,
+        key=lambda new: (-counter[new], new),
+    )
+    return create_return[:5]
