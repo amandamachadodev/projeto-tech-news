@@ -21,6 +21,7 @@ def selected_0_4(menu, select):
     else:
         print(search_by_category(select))
 
+
 def selected_5_7(menu):
     if menu == "5":
         print(top_5_news())
@@ -28,6 +29,7 @@ def selected_5_7(menu):
         print(top_5_categories())
     else:
         print("Encerrando script\n")
+
 
 # Requisito 12
 def analyzer_menu():
