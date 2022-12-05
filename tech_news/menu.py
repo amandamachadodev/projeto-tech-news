@@ -9,6 +9,26 @@ from tech_news.analyzer.ratings import top_5_news, top_5_categories
 import sys
 
 
+def selected_0_4(menu, select):
+    if menu == "0":
+        print(get_tech_news(select))
+    elif menu == "1":
+        print(search_by_title(select))
+    elif menu == "2":
+        print(search_by_date(select))
+    elif menu == "3":
+        print(search_by_tag(select))
+    else:
+        print(search_by_category(select))
+
+def selected_5_7(menu):
+    if menu == "5":
+        print(top_5_news())
+    elif menu == "6":
+        print(top_5_categories())
+    else:
+        print("Encerrando script\n")
+
 # Requisito 12
 def analyzer_menu():
     menu = input(
@@ -32,22 +52,8 @@ def analyzer_menu():
 
     if menu in message:
         select = input(message[menu])
-        if menu == "0":
-            print(get_tech_news(select))
-        elif menu == "1":
-            print(search_by_title(select))
-        elif menu == "2":
-            print(search_by_date(select))
-        elif menu == "3":
-            print(search_by_tag(select))
-        else:
-            print(search_by_category(select))
+        selected_0_4(menu, select)
     elif menu in ["5", "6", "7"]:
-        if menu == "5":
-            print(top_5_news())
-        elif menu == "6":
-            print(top_5_categories())
-        else:
-            print("Encerrando script\n")
+        selected_5_7(menu)
     else:
         sys.stderr.write("Opção inválida\n")
