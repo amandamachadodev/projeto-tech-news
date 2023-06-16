@@ -1,13 +1,19 @@
-# :construction: README customizado em construção ! :construction:
-<!-- Olá, Tryber!
-Esse é apenas um arquivo inicial para o README do seu projeto no qual você pode customizar e reutilizar todas as vezes que for executar o trybe-publisher.
+# Projeto Tech News
 
-Para deixá-lo com a sua cara, basta alterar o seguinte arquivo da sua máquina: ~/.student-repo-publisher/custom/_NEW_README.md
+### Objetivo do projeto
+Construção de uma aplicação para raspagem de dados e manipulação de arquivos para importação e exportação de dados CSV e JSON. Esses dados são armazenados no banco de dados MongoDB para serem persistidos.
 
-É essencial que você preencha esse documento por conta própria, ok?
-Não deixe de usar nossas dicas de escrita de README de projetos, e deixe sua criatividade brilhar!
-:warning: IMPORTANTE: você precisa deixar nítido:
-- quais arquivos/pastas foram desenvolvidos por você; 
-- quais arquivos/pastas foram desenvolvidos por outra pessoa estudante;
-- quais arquivos/pastas foram desenvolvidos pela Trybe.
--->
+### Desafio
+
+Testes com 90% de coverage;
+
+Técnicas de raspagem e manipulação de arquivos.
+
+Criação de um banco de dados de notícias sobre tecnologia e realizar algumas consultas nas notícias registradas.
+
+Notícias obtidas através da raspagem do Blog da Trybe.
+
+Além de importar ou raspar as notícias, também deve ser possível exportá-las e realizar buscas ou análises nas notícias coletadas.
+
+### Tecnologias utilizadas
+Python, MongoDB, parsel
